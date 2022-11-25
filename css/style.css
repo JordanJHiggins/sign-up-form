@@ -1,0 +1,44 @@
+@import url(https://fonts.googleapis.com/css?family=Yeseva+One);
+html {
+}
+body {
+  font-family: "Yeseva One", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  /* background-color: black; */
+}
+/* Sidebar */
+.sidebar-img {
+  background: url("../img/newnewnew.jpg");
+  height: 100vh;
+  width: 40vw;
+  background-repeat: no-repeat;
+}
+
+#flex-container {
+  display: flex;
+  /* flex-direction: row; */
+  flex-grow: 1;
+}
+
+#section-flex {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}
+
+#section-flex > section {
+  flex-grow: 1;
+}
+#one {
+  background-color: beige;
+}
+
+#two {
+  background-color: #070226;
+}
+
+#three {
+  background-color: beige;
+}
