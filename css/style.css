@@ -1,23 +1,39 @@
 @import url(https://fonts.googleapis.com/css?family=Yeseva+One);
-html {
-}
+
 body {
   font-family: "Yeseva One", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol";
-  /* background-color: black; */
 }
 /* Sidebar */
-.sidebar-img {
-  background: url("../img/newnewnew.jpg");
+#sidebar {
+  background: url("../img/pawel-czerwinski-cFT6jboY16w-unsplash.jpg");
   height: 100vh;
   width: 40vw;
   background-repeat: no-repeat;
 }
 
+#banner {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 170px;
+  height: 20vh;
+  width: 40vw;
+  background-color: rgba(166, 157, 149, 0.2);
+}
+
+.banner-text {
+  margin: 0;
+  color: #f4f1d0;
+  font-size: 4rem;
+}
+
 #flex-container {
   display: flex;
-  /* flex-direction: row; */
   flex-grow: 1;
 }
 
@@ -30,15 +46,18 @@ body {
 
 #section-flex > section {
   flex-grow: 1;
+  color: #f4f1d0;
+  font-size: 20px;
 }
+
 #one {
-  background-color: beige;
+  background-color: #a69d95;
 }
 
 #two {
-  background-color: #070226;
+  background-color: #a66641;
 }
 
 #three {
-  background-color: beige;
+  background-color: #a69d95;
 }
