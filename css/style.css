@@ -20,7 +20,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 20px;
-  margin-top: 170px;
+  margin-top: 200px;
   height: 20vh;
   width: 40vw;
   background-color: rgba(166, 157, 149, 0.2);
@@ -31,7 +31,7 @@ body {
   color: #f4f1d0;
   font-size: 4rem;
 }
-
+/* Content sections */
 #flex-container {
   display: flex;
   flex-grow: 1;
@@ -51,13 +51,37 @@ body {
 }
 
 #one {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   background-color: #a69d95;
+  padding: 0px 20px 30px;
 }
 
 #two {
   background-color: #a66641;
+  position: relative;
+  /* z-index: 10; */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 #three {
   background-color: #a69d95;
+}
+/* Form */
+
+input,
+label {
+  font-size: 1rem;
+  display: block;
+}
+input {
+  margin-bottom: 15px;
+}
+
+#form-flex {
+  display: flex;
+  gap: 50px;
+  margin: 40px;
 }
