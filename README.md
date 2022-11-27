@@ -3,4 +3,4 @@ This mock sign up form was created with HTML, CSS, Flexbox and a simple JS passw
 
 The focus on this project was not mobile design, as a result it lacks resposniveness on mobile. However, desktop viewing is intended to be reponsive.
 
-live link: 
+live link: https://jordanjhiggins.github.io/sign-up-form/
