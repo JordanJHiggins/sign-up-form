@@ -103,15 +103,12 @@ input {
   background-color: #f4f1d0;
 }
 
-/* input[type="text"]:valid {
-  outline: 2px solid green;
-}
-input[type="email"]:valid {
-  outline: 2px solid green;
-}
 input:focus {
+  outline: 2px solid rgb(49, 76, 231);
+}
+input[type="password"]:invalid {
   outline: 2px solid red;
-} */
+}
 
 label {
   margin-top: 25px;
