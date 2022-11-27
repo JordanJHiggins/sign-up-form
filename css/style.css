@@ -106,7 +106,7 @@ input {
   background-color: #f4f1d0;
 }
 
-input:focus {
+input:not(.submit-button):focus {
   outline: 2px solid rgb(49, 76, 231);
   box-shadow: rgba(49, 76, 231 0.24) 0px 3px 8px;
 }
