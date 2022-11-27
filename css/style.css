@@ -111,7 +111,7 @@ input:focus {
   box-shadow: rgba(49, 76, 231 0.24) 0px 3px 8px;
 }
 
-input:valid {
+input:not(.submit-button):valid {
   outline: 2px solid green;
 }
 
@@ -133,6 +133,7 @@ label {
 .submit-button {
   color: #f4f1d0;
   background-color: #8c3d20;
+  border: none;
   margin: 30px 40px;
   padding: 20px 15px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -157,6 +158,7 @@ label {
 }
 
 .password-reqs {
+  margin-top: 5px;
   padding-left: 80px;
   padding-bottom: 20px;
   font-size: 1rem;
