@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
-
-    <title>Document</title>
+    <script src="script.js" defer></script>
+    <title>Coffee Club</title>
   </head>
   <body>
     <div id="flex-container">
@@ -24,9 +24,9 @@
             This is not a real online service! Coffee you'll love, straight to
             your door. Sign up <i>now</i> to get started.
           </p>
-
           <p>You <i>know</i> you want to.</p>
         </section>
+
         <!-- Form -->
         <section id="two">
           <p class="section-two-title">Let's do this!</p>
@@ -47,6 +47,7 @@
               <input
                 type="password"
                 class="password1"
+                onchange="checkPass()"
                 pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"
                 required
               />
@@ -68,11 +69,14 @@
               <input
                 type="password"
                 class="password2"
+                onchange="checkPass()"
                 pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"
                 required
               />
+              <div class="password-error"></div>
             </div>
           </form>
+
           <h6>Password requirements:</h6>
           <ul class="password-reqs">
             <li>Minimum 8 characters.</li>
@@ -80,6 +84,7 @@
             <li>Atleast one number (0-9).</li>
           </ul>
         </section>
+
         <section id="three">
           <input
             type="submit"
