@@ -6,6 +6,7 @@ body {
     Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol";
 }
+
 /* Sidebar */
 #sidebar {
   background: url("../img/pawel-czerwinski-cFT6jboY16w-unsplash.jpg");
@@ -32,6 +33,7 @@ body {
   color: #f4f1d0;
   font-size: 4rem;
 }
+
 /* Content sections */
 #flex-container {
   display: flex;
@@ -85,6 +87,7 @@ body {
 #three {
   background-color: #a69d95;
 }
+
 /* Form */
 input,
 label {
@@ -105,7 +108,13 @@ input {
 
 input:focus {
   outline: 2px solid rgb(49, 76, 231);
+  box-shadow: rgba(49, 76, 231 0.24) 0px 3px 8px;
 }
+
+input:valid {
+  outline: 2px solid green;
+}
+
 input[type="password"]:invalid {
   outline: 2px solid red;
 }
@@ -118,7 +127,7 @@ label {
   display: flex;
   align-items: center;
   gap: 50px;
-  margin: 40px;
+  margin: 0px 40px;
 }
 
 .submit-button {
@@ -145,4 +154,18 @@ label {
 .section-three-text > a:hover {
   text-decoration: underline;
   color: #8c3d20;
+}
+
+.password-reqs {
+  padding-left: 80px;
+  padding-bottom: 20px;
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h6 {
+  margin: 0;
+  padding-left: 40px;
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
 }

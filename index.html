@@ -18,7 +18,6 @@
           <p class="banner-text">Coffee Club</p>
         </div>
       </aside>
-      <!-- Content sections -->
       <div id="section-flex">
         <section id="one">
           <p>
@@ -34,26 +33,52 @@
           <form id="form-flex">
             <div id="left-form">
               <label for="first name">FIRST NAME</label>
-              <input type="text" name="first name" required />
+              <input
+                type="text"
+                name="first name"
+                class="first-name"
+                required
+              />
 
               <label for="email">EMAIL</label>
-              <input type="email" name="email" required />
+              <input type="email" name="email" class="email" required />
 
               <label for="password">PASSWORD</label>
-              <input type="password" required />
+              <input
+                type="password"
+                class="password1"
+                pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"
+                required
+              />
             </div>
 
             <div id="right-form">
               <label for="last name">LAST NAME</label>
-              <input type="text" name="last name" required />
+              <input type="text" name="last name" class="last-name" required />
 
               <label for="phone number">PHONE NUMBER</label>
-              <input type="tel" name="phone number" />
+              <input
+                type="tel"
+                name="phone number"
+                class="phone-number"
+                pattern="^\(?([0-9]{3})\)?[-.●]?([0-9]{3})[-.●]?([0-9]{4})$"
+              />
 
               <label for="confirm password">CONFIRM PASSWORD</label>
-              <input type="password" required />
+              <input
+                type="password"
+                class="password2"
+                pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"
+                required
+              />
             </div>
           </form>
+          <h6>Password requirements:</h6>
+          <ul class="password-reqs">
+            <li>Minimum 8 characters.</li>
+            <li>Atleast one letter (A-Z).</li>
+            <li>Atleast one number (0-9).</li>
+          </ul>
         </section>
         <section id="three">
           <input
