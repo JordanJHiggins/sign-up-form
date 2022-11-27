@@ -22,9 +22,8 @@
       <div id="section-flex">
         <section id="one">
           <p>
-            This is not a real online service! You know you need something like
-            this in your life to help you realize your deepest dreams. Sign up
-            <i>now</i> to get started.
+            This is not a real online service! Coffee you'll love, straight to
+            your door. Sign up <i>now</i> to get started.
           </p>
 
           <p>You <i>know</i> you want to.</p>
@@ -35,10 +34,10 @@
           <form id="form-flex">
             <div id="left-form">
               <label for="first name">FIRST NAME</label>
-              <input type="text" name="first name" />
+              <input type="text" name="first name" required />
 
               <label for="email">EMAIL</label>
-              <input type="email" name="email" />
+              <input type="email" name="email" required />
 
               <label for="password">PASSWORD</label>
               <input type="password" required />
@@ -46,13 +45,13 @@
 
             <div id="right-form">
               <label for="last name">LAST NAME</label>
-              <input type="text" name="last name" />
+              <input type="text" name="last name" required />
 
               <label for="phone number">PHONE NUMBER</label>
               <input type="tel" name="phone number" />
 
               <label for="confirm password">CONFIRM PASSWORD</label>
-              <input type="password" />
+              <input type="password" required />
             </div>
           </form>
         </section>
@@ -60,7 +59,7 @@
           <input
             type="submit"
             form="form-flex"
-            id="submit-button"
+            class="submit-button"
             value="Create Account"
           />
           <p class="section-three-text">
